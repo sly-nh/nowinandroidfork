@@ -70,6 +70,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.firebase.bom.v3390)
+    implementation(libs.com.google.firebase.firebase.analytics)
     implementation(projects.feature.interests)
     implementation(projects.feature.foryou)
     implementation(projects.feature.bookmarks)
