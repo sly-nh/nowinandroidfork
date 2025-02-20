@@ -65,6 +65,7 @@ class NiaApplication : Application(), ImageLoaderFactory {
      */
     private fun setStrictModePolicy() {
         if (isDebuggable()) {
+            // https://github.com/android/nowinandroid/issues/1788 boot failed
             StrictMode.setThreadPolicy(
                 Builder().detectAll().penaltyLog().build(),
             )
